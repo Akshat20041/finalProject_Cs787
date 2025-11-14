@@ -19,11 +19,6 @@ An advanced tool that automates the creation of unit tests for Python code. It l
 
 The core of this project is a stateful graph built with `LangGraph`. The graph defines a cyclical workflow where agents collaborate to produce and validate unit tests.
 
-**Workflow Diagram:**
-`[Detect] -> [Generate] -> [Combine] -> [Execute] -> [Critic]`
-`   ^                                                    |`
-`   |-------------(if tests fail)------------------------|`
-
 -   **1. Detect Node**:
     -   Parses the user-provided `README.md` and Python source code to identify function names and detect the project's framework (e.g., Flask).
 
